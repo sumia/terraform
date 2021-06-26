@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "sa-learn" {
-	name = "silly"
-	location = "UK South"
+	name = var.app_name
+	location = var.location
 }

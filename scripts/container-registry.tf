@@ -1,7 +1,7 @@
 resource "azurerm_container_registry" "sa-container-registry" {
 	name = "sillyconreg" 
 	resource_group_name = azurerm_resource_group.sa-learn.name
-	location = "UK South"
+	location = var.location
 	admin_enabled = true
 	sku = "Basic"
 }
